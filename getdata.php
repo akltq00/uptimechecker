@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "uptimechecker";
+$dbname = "uptimechecker"; /* FIXME: Veritabanı bilgileri değiştirilecek. */
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Bağlantı başarısız: " . $conn->connect_error);
